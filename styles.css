@@ -4,8 +4,55 @@ html, body{
 }
 #main{
     min-height: 100%;
+    padding: 0 30px;
 }
 
+/**************************************
+ Header
+**************************************/
+header{
+    text-align: center;
+}
+header h1#title{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+header span{
+    display: block;
+}
+header div p#img-caption{
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.60);
+    margin-top: 5px;
+    padding-top: 0;
+}
+header img{
+    width: 50%;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.60);
+}
+
+@media screen and (min-width: 800px){
+    header img{
+        width: 25%;
+    }    
+}
+/**************************************
+Body
+**************************************/
+#tribute-info a:link,
+#tribute-info a:visited{
+    font-weight: bold;
+    color: darkblue;
+    border: dotted 1px gray;
+    text-decoration: none;
+}
+
+#tribute-info a:hover{
+    animation: body-link 0.25s forwards;
+}
+/**************************************
+ Footer
+**************************************/
 footer{
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -19,21 +66,46 @@ footer{
 
 footer ul{
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
 }
 
 footer ul li{
-    font-size: 20px;
+    display: inline;
 }
 
-footer ul li:not(:first-child){
-    font-size: 45px;  
+footer #copyright{
+    float: left;
+    padding-left: 20px;
+}
+
+footer #social{
+    float: right;
+    font-size: 45px;
+}
+
+footer #social:last-child{
+    padding-right: 20px;
+}
+
+footer a:hover{
+    animation: social-link 0.5s forwards;
 }
 
 footer a:link,
 footer a:visited{
     color: #fff;
+}
+
+@keyframes body-link{
+    100%{
+        color: rgb(128, 199, 223);
+    }
+}
+
+@keyframes social-link{
+    100%{
+        color: rgb(128, 199, 223);
+    }
 }
 
