@@ -1,0 +1,39 @@
+html, body{
+    height: 100%;
+    font-family: sans-serif;
+}
+#main{
+    min-height: 100%;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: relative;
+    clear: both;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer ul li{
+    font-size: 20px;
+}
+
+footer ul li:not(:first-child){
+    font-size: 45px;  
+}
+
+footer a:link,
+footer a:visited{
+    color: #fff;
+}
+
