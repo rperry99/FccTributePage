@@ -19,6 +19,7 @@ header h1#title{
 }
 header span{
     display: block;
+    font-size: 25px;
 }
 header div p#img-caption{
     font-style: italic;
@@ -27,14 +28,11 @@ header div p#img-caption{
     padding-top: 0;
 }
 header img{
-    width: 50%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 200px;
     box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.60);
-}
-
-@media screen and (min-width: 800px){
-    header img{
-        width: 25%;
-    }    
 }
 /**************************************
 Body
@@ -43,12 +41,19 @@ Body
 #tribute-info a:visited{
     font-weight: bold;
     color: darkblue;
-    border: dotted 1px gray;
     text-decoration: none;
 }
 
 #tribute-info a:hover{
     animation: body-link 0.25s forwards;
+}
+
+#macabre{
+    text-align: center;
+}
+
+#macabre ul li{
+    list-style-type: none;
 }
 /**************************************
  Footer
